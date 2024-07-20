@@ -6,7 +6,6 @@
 //   reverse('hello') === 'olleh'
 //   reverse('Happy!') === '!yppaH'
 
-
 // #1 Solution
 export const reverse = (str: string): string => {
   return str.split('').reverse().join('');
@@ -14,14 +13,9 @@ export const reverse = (str: string): string => {
 
 // #2 Solution
 export const reverse = (str: string): string => {
-  const strArray = str.split(''); // ['a', 'p', 'p', 'l', 'e'];
+  const strArray = str.split('');
 
   return strArray.reduce((reversed, character) => {
-    // a + '' = 'a';
-    // p + 'a' = 'pa';
-    // p + 'pa' = 'ppa';
-    // l + 'ppa' = 'lppa';
-    // e + 'lppa' = 'elppa';
     return character + reversed;
   }, '');
 }
@@ -30,7 +24,7 @@ export const reverse = (str: string): string => {
 export const reverse = (str: string): string => {
   let reversed = '';
 
-  for (let character of str) { // apple -> a, p, p, l, e
+  for (let character of str) {
     reversed = character + reversed;
   }
 
