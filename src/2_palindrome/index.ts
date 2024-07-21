@@ -8,18 +8,18 @@
 //   palindrome("qwerty") === false
 
 // #1 Solution
-// export const palindrome = (str: string): boolean => {
-//   const reversedString = str.split('').reverse().join('');
+export const palindrome = (str: string): boolean => {
+  const reversedString = str.split('').reverse().join('');
 
-//   return str === reversedString;
-// }
+  return str === reversedString;
+}
 
 // #2 Solution
-// export const palindrome = (str: string): boolean => {
-//   const reversedString = str.split('').reduce((rev, char) => char + rev, '');
+export const palindrome = (str: string): boolean => {
+  const reversedString = str.split('').reduce((rev, char) => char + rev, '');
 
-//   return str === reversedString;
-// };
+  return str === reversedString;
+};
 
 // #3 Solution
 export const palindrome = (str: string): boolean => {
