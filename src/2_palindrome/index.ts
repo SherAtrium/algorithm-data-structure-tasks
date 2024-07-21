@@ -7,6 +7,27 @@
 //   palindrome("appa") === true
 //   palindrome("qwerty") === false
 
-export const palindrome = (str: string) => {
-  return '';
+// #1 Solution
+// export const palindrome = (str: string): boolean => {
+//   const reversedString = str.split('').reverse().join('');
+
+//   return str === reversedString;
+// }
+
+// #2 Solution
+// export const palindrome = (str: string): boolean => {
+//   const reversedString = str.split('').reduce((rev, char) => char + rev, '');
+
+//   return str === reversedString;
+// };
+
+// #3 Solution
+export const palindrome = (str: string): boolean => {
+  let reversedString = '';
+
+  for (let char of str) {
+    reversedString = char + reversedString;
+  }
+
+  return str === reversedString;
 }
