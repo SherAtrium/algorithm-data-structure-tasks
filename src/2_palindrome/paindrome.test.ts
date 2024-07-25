@@ -1,4 +1,4 @@
-import { palindrome } from './';
+import { palindrome } from '.';
 
 test('palindrome function is defined', () => {
   expect(palindrome).toBeDefined();
