@@ -30,9 +30,9 @@ export const maxChar = (str: string): string => {
   }
 
   for (let key in charsObj) {
-    if (charsObj[key] > max) { // 2 > 1
-      max = charsObj[key]; // max = 2
-      maxChar = key; // maxChar = 'l'
+    if (charsObj[key] > max) {
+      max = charsObj[key];
+      maxChar = key;
     }
   }
 
